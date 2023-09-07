@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/springboot-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybaits/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-condition/pom.xml" />
       </list>
     </option>
   </component>
