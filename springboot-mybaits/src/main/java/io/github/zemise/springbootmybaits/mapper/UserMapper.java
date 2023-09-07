@@ -4,6 +4,9 @@ import io.github.zemise.springbootmybaits.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+/**
+ * @author Zemise
+ */
 @Mapper
 public interface UserMapper {
     @Select("select * from t_user")
