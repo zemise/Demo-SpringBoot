@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94fe94ac-2478-4ab2-861b-8c68b1193fe7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-condition/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="a1551f17-c20f-48de-a36c-c5ae968a385e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/config/EnableUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/config/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/config/MyImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/config/UserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable-other/src/main/java/io/github/zemise/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable/src/main/java/io/github/zemise/springbootenable/SpringbootEnableApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-enable/src/test/java/io/github/zemise/springbootenable/SpringbootEnableApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-condition/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-condition/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/SpringbootConditionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/SpringbootConditionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/condition/ClassCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/condition/ClassCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/config/UserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-condition/src/main/java/io/github/zemise/springbootcondition/config/UserConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,41 +47,55 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2V6ejn8Okhdeip5I54yiWsge4UZ" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2V7JNbKYEpnNoUfd8DT53WjgeCf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "20",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "spring.configuration.checksum": "0359b5eae9c6565527bfb711eebe51ee",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,13 +106,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootConditionApplication">
-    <configuration name="SpringbootConditionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot-condition" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootcondition.SpringbootConditionApplication" />
+  <component name="RunManager" selected="Spring Boot.SpringbootEnableApplication">
+    <configuration name="SpringbootConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootconfig.SpringbootConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootEnableApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-enable" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootenable.SpringbootEnableApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.zemise.springbootcondition.*" />
+          <option name="PATTERN" value="io.github.zemise.springbootenable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,9 +127,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootconfig.SpringbootConfigApplication" />
+    <configuration name="SpringbootInitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-init.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootinit.SpringbootInitApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,33 +157,26 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringbootConditionApplication" />
+        <item itemvalue="Spring Boot.SpringbootEnableApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="94fe94ac-2478-4ab2-861b-8c68b1193fe7" name="Changes" comment="" />
-      <created>1694161098254</created>
+      <changelist id="a1551f17-c20f-48de-a36c-c5ae968a385e" name="Changes" comment="" />
+      <created>1694181147359</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694161098254</updated>
-      <workItem from="1694161101212" duration="47000" />
-      <workItem from="1694161175730" duration="252000" />
-      <workItem from="1694161647783" duration="56000" />
-      <workItem from="1694161706730" duration="154000" />
-      <workItem from="1694161888711" duration="2335000" />
-      <workItem from="1694164265346" duration="376000" />
-      <workItem from="1694165472598" duration="746000" />
+      <updated>1694181147359</updated>
+      <workItem from="1694181149560" duration="6322000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

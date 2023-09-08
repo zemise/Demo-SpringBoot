@@ -38,3 +38,44 @@ springboot程序启动时，会从以下位置加载配置文件
     * ConditionalProperties: 判断配置文件中是否有对应属性和值才初始化Bean
     * ConditionalOnClass: 判断环境中是否有对应的字节码文件才初始化Bean
     * ConditionalOnMissingBean: 判断环境中没有对应的Bean才初始化Bean
+
+### SpringBoot自动配置
+
+## 切换内置Web服务器
+
+SpringBoot的Web环境默认使用类tomcat作为内置服务器，其实SpringBoot提供了4种内置服务器供我们选择，可以很方便的切换
+其实现原理和上文的Condition一致，实际操作就只用改动坐标即可，如：
+
+```xml
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+    <exclusions>
+        <!--排除tomcat依赖-->
+        <exclusion>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <groupId>org.springframework.boot</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+        <!--引入jetty依赖-->
+<dependency>
+<artifactId>spring-boot-starter-jetty</artifactId>
+<groupId>org.springframework.boot</groupId>
+</dependency>
+```
+
+## @Enable* 注解
+
+SpringBoot中提供了很多Enable开头的注解，这些注解都用于动态启用某些功能的。其底层原理是使用@Import注解导入一些配置类，实现Bean的动态加载。
+
+### @Import注解
+
+@Enable* 底层是依赖于@Import注解来导入一些类，使用@Import导入的类会被Spring加载到IOC容器中 ，而@Import提供了4种用法：
+
+- 导入Bean
+- 导入配置类
+- 导入ImportSelector实现类，一般用于加载配置文件种的类
+- 导入ImportBeanDefinitionRegister实现类
