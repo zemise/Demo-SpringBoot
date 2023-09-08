@@ -1,9 +1,8 @@
 package io.github.zemise.springbootcondition.config;
 
-import io.github.zemise.springbootcondition.condition.ClassCondition;
+import io.github.zemise.springbootcondition.condition.ConditionOnClass;
 import io.github.zemise.springbootcondition.domain.User;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -18,7 +17,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class UserConfig {
     @Bean
-    @Conditional(ClassCondition.class)
+    //@Conditional(ClassCondition.class)
+
+    @ConditionOnClass("redis.clients.jedis.Jedis")
     public User user() {
         return new User();
     }
