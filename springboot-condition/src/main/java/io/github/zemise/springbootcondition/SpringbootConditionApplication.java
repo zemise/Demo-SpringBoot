@@ -19,5 +19,10 @@ public class SpringbootConditionApplication {
 
         Object user = context.getBean("user");
         System.out.println(user);
+
+        System.out.println("=================");
+
+        Object user2 = context.getBean("user2");
+        System.out.println(user2);
     }
 }
