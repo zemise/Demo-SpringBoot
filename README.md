@@ -101,10 +101,42 @@ SpringBoot中提供了很多Enable开头的注解，这些注解都用于动态�
 Java监听机制
 SpringBoot的监听机制，其实是对Java提供的事件监听机制的封装
 java的事件监听机制定义了以下几个角色：
+
 1. 事件：Event，继承java.util.EventObject类的对象
 2. 事件源：Source，任意对象的Object
 3. 监听器：Listener，实现java.util.EventListener接口的对象
 
 ## SpringBoot监听机制
+
 SpringBoot在项目启动时，会对几个监听器进行回调，我们可以实现这些监听接口，在项目启动完成一些操作
 ApplicationContextInitializer、SpringApplicationRunListener、CommandLineRunner、ApplicationRunner
+
+## SpringBoot启动流程分析
+
+em....这部分，似乎就看了个大概，实际没明白
+可能...就学会了替换banner.txt
+
+## SpringBoot监控
+
+### SpringBoot监控概述
+
+SpringBoot自带监控功能插件Actuator，可以帮助实现对程序内部运行情况监控，比如监控状况、Bean加载情况、配置属性、日志信息等
+
+### SpringBoot监控使用
+
+1. 引入依赖
+
+```xml
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+```
+
+2. http://localhost:8080/actuator
+   得到的是一些json，可以复制粘贴到json.cn网站去在线解析一下
+
+`开启健康检查的完整信息
+management.endpoint.health.show-details=always`
