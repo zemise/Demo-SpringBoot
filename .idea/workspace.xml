@@ -5,25 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77729c6d-a9e5-4053-9506-2559e1941fb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-listener/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/SpringbootListenerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyApplicationContextInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyApplicationRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyCommandLineRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MySpringApplicationRunListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/test/java/io/github/zemise/springbootlistener/SpringbootListenerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyApplicationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyApplicationRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyCommandLineRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-listener/src/main/java/io/github/zemise/springbootlistener/listener/MyCommandLineRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/springboot-init">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/3.1.3/spring-boot-3.1.3.jar!/org/springframework/boot/SpringApplicationRunListener.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,6 +83,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "e4bb7122395517089f195d01ba2a41a5",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -109,8 +123,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootInitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-init.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootinit.SpringbootInitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootListenerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-listener" />
+      <option name="PROGRAM_PARAMETERS" value="name=zemise" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootlistener.SpringbootListenerApplication" />
       <extension name="coverage">
         <pattern>
@@ -122,6 +144,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootMybaitsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-mybaits" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootmybaits.SpringbootMybaitsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootProfilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-profiles" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootprofiles.SpringbootProfilesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springboottest.SpringbootTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RedisSpringBootAutoconfigureApplication" />
+      <item itemvalue="Spring Boot.SpringbootConfigApplication" />
+      <item itemvalue="Spring Boot.SpringbootInitApplication" />
+      <item itemvalue="Spring Boot.SpringbootMybaitsApplication" />
+      <item itemvalue="Spring Boot.SpringbootProfilesApplication" />
+      <item itemvalue="Spring Boot.SpringbootTestApplication" />
+      <item itemvalue="Spring Boot.SpringbootEnableApplication" />
+      <item itemvalue="Spring Boot.SpringbootListenerApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SpringbootListenerApplication" />
@@ -138,7 +191,8 @@
       <option name="presentableId" value="Default" />
       <updated>1694222478350</updated>
       <workItem from="1694222478366" duration="556000" />
-      <workItem from="1694223778528" duration="6796000" />
+      <workItem from="1694223778528" duration="7195000" />
+      <workItem from="1694242898645" duration="1001000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=io.github.zemise.springbootlistener.listener.MyApplicationContextInitializer
+org.springframework.boot.SpringApplicationRunListener=io.github.zemise.springbootlistener.listener.MySpringApplicationRunListener
