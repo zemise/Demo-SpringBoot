@@ -30,6 +30,20 @@
             <artifactId>springboot-enable-other</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+<!--        &lt;!&ndash;mybatis起步依赖&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.mybatis.spring.boot</groupId>-->
+<!--            <artifactId>mybatis-spring-boot-starter</artifactId>-->
+<!--            <version>3.0.2</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>io.github.zemise</groupId>
+            <artifactId>redis-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

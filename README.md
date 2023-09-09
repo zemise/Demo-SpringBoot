@@ -39,7 +39,7 @@ springboot程序启动时，会从以下位置加载配置文件
     * ConditionalOnClass: 判断环境中是否有对应的字节码文件才初始化Bean
     * ConditionalOnMissingBean: 判断环境中没有对应的Bean才初始化Bean
 
-### SpringBoot自动配置
+# SpringBoot自动配置
 
 ## 切换内置Web服务器
 
@@ -48,23 +48,25 @@ SpringBoot的Web环境默认使用类tomcat作为内置服务器，其实SpringB
 
 ```xml
 
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-    <exclusions>
-        <!--排除tomcat依赖-->
-        <exclusion>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <groupId>org.springframework.boot</groupId>
-        </exclusion>
-    </exclusions>
-</dependency>
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <exclusions>
+            <!--排除tomcat依赖-->
+            <exclusion>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+                <groupId>org.springframework.boot</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
 
-        <!--引入jetty依赖-->
-<dependency>
-<artifactId>spring-boot-starter-jetty</artifactId>
-<groupId>org.springframework.boot</groupId>
-</dependency>
+    <!--引入jetty依赖-->
+    <dependency>
+        <artifactId>spring-boot-starter-jetty</artifactId>
+        <groupId>org.springframework.boot</groupId>
+    </dependency>
+</dependencies>
 ```
 
 ## @Enable* 注解
@@ -79,3 +81,17 @@ SpringBoot中提供了很多Enable开头的注解，这些注解都用于动态�
 - 导入配置类
 - 导入ImportSelector实现类，一般用于加载配置文件种的类
 - 导入ImportBeanDefinitionRegister实现类
+
+@EnableAutoConfiguration 注解
+
+- @EnableAutoConfiguration注解内部使用@Import(AutoConfigurationImportSelector.class)来加载配置类。
+- 配置文件位置：META-INF/spring.factories,该配置文件定义了大量的配置类，当SpringBoot应用启动时，会自动加载这些配置类，初始化Bean
+
+### 尝试自定义一个Spring boot的自动配置
+
+`需求：自定义redis-start。要求当导入redis坐标的时候，SpringBoot自动创建redis的Bean`
+实现步骤：
+
+1. 创建redis-spring-boot-autoconfigure模块
+2. 创建redis-spring-boot-stater模块，依赖redis-srping-boot-autoconfigure模块
+3. 在redis-spring-boot-autoconfigure模块中初始化Jedis的Bean，并定义META-INF/spring.factories文件

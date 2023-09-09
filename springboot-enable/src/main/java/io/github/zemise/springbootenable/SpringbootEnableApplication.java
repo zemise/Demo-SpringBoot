@@ -8,7 +8,9 @@ import io.github.zemise.config.UserConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
+import redis.clients.jedis.Jedis;
 
 import java.util.Map;
 
@@ -57,12 +59,22 @@ public class SpringbootEnableApplication {
         System.out.println(role);
         */
 
+        /*
         Object user = context.getBean("user");
         System.out.println(user);
+         */
 
         /*
         Map<String, User> map = context.getBeansOfType(User.class);
         System.out.println(map);*/
+
+        Jedis jedis = context.getBean(Jedis.class);
+        System.out.println(jedis);
+
     }
 
+    @Bean
+    public Jedis jedis(){
+        return new Jedis("localhost", 6379);
+    }
 }
