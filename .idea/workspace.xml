@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77729c6d-a9e5-4053-9506-2559e1941fb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/src/main/java/io/github/zemise/springbootactuator/SpringbootActuatorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-actuator/src/test/java/io/github/zemise/springbootactuator/SpringbootActuatorApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-listener/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-condition/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-config/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-enable-other/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-enable/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-helloworld/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-actuator/src/main/java/io/github/zemise/springbootactuator/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-actuator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-actuator/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +68,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -96,7 +82,7 @@
     "project.structure.proportion": "0.15527344",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "e4bb7122395517089f195d01ba2a41a5",
+    "spring.configuration.checksum": "5e70781c666a99f3db46d4819b20bd97",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -213,6 +199,7 @@
       <workItem from="1694222478366" duration="556000" />
       <workItem from="1694223778528" duration="7195000" />
       <workItem from="1694242898645" duration="6549000" />
+      <workItem from="1694387044390" duration="602000" />
     </task>
     <servers />
   </component>
