@@ -140,3 +140,26 @@ SpringBoot自带监控功能插件Actuator，可以帮助实现对程序内部�
 
 `开启健康检查的完整信息
 management.endpoint.health.show-details=always`
+
+### SpringBoot Admin
+
+- SpringBoot Admin是一个开源社区项目，用于管理和监控SpringBoot应用程序
+- 有两个角色，客户端和服务端
+- 应用程序作为SpringBoot Client向为SpringBoot Admin Server注册
+- Springboot Admin Server的UI界面展示Springboot Admin Client的Actuator Endpoint上的一些监控信息
+
+使用步骤:
+
+- admin server:
+    - 创建admin-server模块
+    - 导入依赖坐标admin-starter-server
+    - 在引导类启用监控功能@EnableAdminServer
+
+- admin client
+    - 创建admin-client模块
+    - 导入依赖坐标admin-starter-client
+    - 配置相关信息，server地址等
+    - 启用server和client服务，访问server
+
+# SpringBoot项目部署
+
