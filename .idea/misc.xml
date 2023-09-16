@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/springboot-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-condition/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-profiles/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-event/pom.xml" />
       </list>
     </option>
   </component>
