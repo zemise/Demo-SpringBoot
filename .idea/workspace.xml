@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/DesignTacoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/IngredientByIdConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/SpringbootWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Taco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/TacoOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/web/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/static/images/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/design.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/orderForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/test/java/io/github/zemise/web/HomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2VV6UjB045QHwgRlGSKHnzbPbWJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-web/src/main/resources/image",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "41ef4ba9665eda7dfa581e51bef50cb9",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\001_AllCode\Java\SpringBoot\Demo-SpringBoot\springboot-web\src\main\resources\image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\001_AllCode\Java\SpringBoot\Demo-SpringBoot\springboot-web\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.zemise.tacoweb" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootWebApplication (1)">
+    <configuration name="HomeControllerTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.zemise.web" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.web.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.tacoweb.SpringbootWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.tacoweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="springboot-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.web.SpringbootWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringbootWebApplication (1)" />
+        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="" />
+      <created>1694908921578</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694908921578</updated>
+      <workItem from="1694908927088" duration="2989000" />
+      <workItem from="1694999099513" duration="6041000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
