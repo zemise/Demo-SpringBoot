@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/DesignTacoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/IngredientByIdConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/SpringbootWebApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Taco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/TacoOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/web/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/static/images/index.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/design.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/orderForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web/src/test/java/io/github/zemise/web/HomeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/DesignTacoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/DesignTacoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Taco.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/Taco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/TacoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/TacoOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/web/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/web/SpringbootWebApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/orderForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/main/resources/templates/orderForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web/src/test/java/io/github/zemise/web/HomeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web/src/test/java/io/github/zemise/web/HomeControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +28,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +60,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "F:/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-web/src/main/resources/image",
@@ -71,6 +69,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "41ef4ba9665eda7dfa581e51bef50cb9",
     "vue.rearranger.settings.migration": "true"
   }
@@ -86,24 +88,17 @@
       <recent name="io.github.zemise.tacoweb" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootWebApplication (1)">
-    <configuration name="HomeControllerTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.web" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.web.HomeControllerTest" />
-      <option name="METHOD_NAME" value="testHomePage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringbootWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="springboot-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.tacoweb.SpringbootWebApplication" />
@@ -117,18 +112,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="springboot-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.web.SpringbootWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringbootWebApplication (1)" />
-        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
+        <item itemvalue="Spring Boot.SpringbootWebApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +128,9 @@
       <updated>1694908921578</updated>
       <workItem from="1694908927088" duration="2989000" />
       <workItem from="1694999099513" duration="6041000" />
+      <workItem from="1695643419046" duration="4251000" />
+      <workItem from="1696390132336" duration="12492000" />
+      <workItem from="1696499289626" duration="3870000" />
     </task>
     <servers />
   </component>
