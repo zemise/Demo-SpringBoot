@@ -1,4 +1,4 @@
-package io.github.zemise.tacoweb;
+package io.github.zemise.tacoweb.domain;
 
 import lombok.Data;
 

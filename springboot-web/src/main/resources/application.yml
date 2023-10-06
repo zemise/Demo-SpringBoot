@@ -1,0 +1,11 @@
+# pro set true
+# dev set false
+# but Spring Boot DevTools more convenient
+spring.thymeleaf.cache: false
+
+# assign h2 database name
+spring:
+    datasource:
+        # set URL to "jdbc:h2:mem:tacocloud"
+        generate-unique-name: false
+        name: tacocloud

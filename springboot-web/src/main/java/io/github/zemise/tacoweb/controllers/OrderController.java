@@ -1,5 +1,6 @@
-package io.github.zemise.tacoweb;
+package io.github.zemise.tacoweb.controllers;
 
+import io.github.zemise.tacoweb.domain.TacoOrder;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -8,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.bind.support.SessionStatus;
 
 @Slf4j
 @Controller
@@ -21,7 +21,7 @@ public class OrderController {
     }
 
     @PostMapping
-    public String processOrder(@Valid  TacoOrder order, Errors errors){
+    public String processOrder(@Valid TacoOrder order, Errors errors){
         if (errors.hasErrors()){
             return "orderForm";
         }
