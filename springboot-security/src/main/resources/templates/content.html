@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>content</title>
 </head>
 <body>
-$END$
+<h1>content</h1>
+<p>我是登陆后才能看到的页面</p>
+
+<p>点击 <a th:href="@{/admin}">这里</a> 进入管理员页面</p>
+
+<form method="post" action="/logout">
+    <button type="submit">退出</button>
+</form>
 </body>
 </html>

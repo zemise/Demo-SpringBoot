@@ -6,6 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/springboot-web/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-scheduled/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-deploy/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/student-management-system/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-security/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-security01/pom.xml" />
       </list>
     </option>
   </component>
