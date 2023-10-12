@@ -3,11 +3,13 @@ spring:
   # dataSource
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/security_test?
-      serverTimezone=UTC&
+    url: jdbc:mysql://localhost:3306/secruity_test?
       useUnicode=true&
       characterEncoding=utf-8&
-      useSSL=true
+      useSSL=true&
+      serverTimezone=Asia/Shanghai
+      # serverTimezone=UTC
+    # 此处因为插入数据库的时间有差异，所以强制了时区，暂时如此处理
     username: root
     password: root
   # jpa

@@ -236,7 +236,7 @@ public class Customer {
 }
 ```
 
-- OneToMore
+- OneToMany
 ```java
 @Entity
 @Table(name = "m_customer")
@@ -263,17 +263,243 @@ public class CustomerM {
 }
 ```
 
+- ManyToOne
+当插入"多""的数据的时候，使用多对一的关联关系更加合理
+只有几个注意点，如下
+```
+@Test
+@Transactional(readOnly = true)
+void testFind(){
+    CustomerM customerM = new CustomerM();
+    customerM.setId(1L);
+    // 只能通过ID查询，下方的名字设置，其实并没有影响
+    customerM.setName("xxxx");
+
+    List<Message> messages = repository.findByCustomer(customerM);
+    // 这里隐式调用ToString方法
+    System.out.println(messages);
+
+    // 如果 @ManyToOne(cascade = CascadeType.PERSIST)设置如此，就只会删除message那张表内容
+    repository.deleteAll(messages);
+}
+```
+
+- ManyToMany
+
+```java
+@Entity
+@Table(name = "a_employee")
+@Data
+public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    // 单向 多对多
+    /**
+     * 中间表需要通过@JoinTable来维护 （不设置也会自动生成）
+     * name 指定中间表的名称
+     * JoinColums 设置本表的外键名称
+     * inverseJoinColumns 设置关联表的外键名称
+     */
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "a_employee_role_relation",
+    joinColumns = {@JoinColumn(name = "em_id")},
+    inverseJoinColumns = {@JoinColumn(name = "r_id")})
+    private List<Role> roles;
+}
+```
+
+```java
+@SpringBootTest
+public class ManyToManyTest {
+    @Resource
+    EmployeeRepository employeeRepository;
+
+    @Resource
+    RoleRepository roleRepository;
+
+    @Test
+    @Transactional
+    @Commit // 此处很重要，不加这条注释，可能不会入库
+    // 插入
+    /**
+     * 1. 如果保存的关联数据，希望使用已有的，就需要从数据库中查出来
+     *    否则提示游离状态，不能持久化
+     *
+     * 2. 如果一个业务方法有多个持久话操作，记得加上@Transactional
+     *    否则不能公用一个session
+     *
+     * 3. 在单元测试中用到了@Transactional，如果有增删改的操作，一定要加@commit
+     *    因为单元测试中，一般不会考虑修改数据库，认为事务方法为@Transactional，只是测试
+     *    所以需要单独加上@commit
+     */
+    void test() {
+        ArrayList<Role> list = new ArrayList<>();
+//        list.add(new Role("管理员"));
+//        list.add(new Role("普通职工"));
+//        list.add(new Role("主任"));
+//        list.add(new Role("超级管理员"));
+
+        list.add(roleRepository.findByName("管理员"));
+        list.add(roleRepository.findByName("超级管理员"));
+
+
+//        list.add(roleRepository.findById(1L).get());
+//        list.add(roleRepository.findById(2L).get());
+
+        Employee employee = new Employee();
+        employee.setName("赵六");
+        employee.setRoles(list);
+
+        employeeRepository.save(employee);
+    }
+
+
+    @Test
+    @Transactional(readOnly = true)
+    void testFind() {
+
+        // System.out.println(employeeRepository.findById(1L));
+        Employee user = employeeRepository.findByName("赵大");
+        System.out.println(user);
+        System.out.println(user.getRoles());
+    }
+
+    // 删除
+
+    /**
+     * 注意点：
+     * 多对多其实不适合删除
+     * 因为经常出现可能除了和当前这端关联，还会关联另一端
+     * 此时删除就会出现：DataIntegrityViolationException
+     *   要删除，就要保证没有额外其他另一端数据关联
+     */
+    @Test
+    @Transactional
+    @Commit
+    void testDelete() {
+        Optional<Employee> employee = employeeRepository.findById(1L);
+        employeeRepository.delete(employee.get());
+    }
+
+    // update
+    @Test
+    void testUpdate() {
+        Employee employee = new Employee();
+        employee.setId(1L);
+        employee.setName("张三");
+
+        employeeRepository.save(employee);
+    }
+}
+
+```
+
+
+
 **设置了懒加载后需添加@Transactional？为什么懒加载需要配置事务？**
 - 当通过repository调用完查询方法后，session就会立即关闭，一旦session关闭就不能查询
 - 加了事务后，就能让session直到事务关闭才会关闭
 
+**乐观锁**
+hibernate
+主要作用：防止并发修改
+```
+private @Version Long version;
+```
+简单来说就是加一个@Version和属性
+
+**审计**
+```java
+@Entity
+@Table(name = "a_employee")
+@Data
+@EntityListeners(AuditingEntityListener.class)
+public class Employee {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "a_employee_role_relation",
+            joinColumns = {@JoinColumn(name = "em_id")},
+            inverseJoinColumns = {@JoinColumn(name = "r_id")})
+    private List<Role> roles;
+
+    // 乐观锁
+    private @Version Long version;
+
+    // 审计相关
+    @CreatedBy
+    String createdBy;
+
+    @LastModifiedBy
+    String modifiedBy;
+
+    /**
+     * 实体创建时间
+     */
+    @Temporal(TemporalType.TIMESTAMP)
+    @CreatedDate
+    protected Date dateCreated = new Date();
+
+    /**
+     * 实体修改时间
+     */
+    @Temporal(TemporalType.TIMESTAMP)
+    @LastModifiedDate
+    protected Date dateModified = new Date();
+}
+
+```
+
+```java
+@Component
+@EnableJpaAuditing
+public class JpaConfig {
+
+    // AuditorAware 返回当前用户
+    @Bean
+    public AuditorAware<String> auditorAware(){
+       return new AuditorAware(){
+            @Override
+            public Optional getCurrentAuditor() {
+                // 当前用户 session 或redis等等
+                // 此处测试，写死了
+                return Optional.of("zemise");
+            }
+        };
+    }
+}
+```
 
 
 题外话：
-@Data 等于以下四个注解
-```java
+1. @Data 等于以下四个注解
+```
 @Getter // 所有属性的get方法
 @Setter // 所有属性的set方法
 @RequiredArgsConstructor // 生成所欲必须属性(加final)的构造方法，如果没有final就是无参构造方法
 @EqualAndHashCode
 ```
+2. 用springboot jpa往服务器mysql插入数据时，对应时间不匹配的解决办法
+   - 对应mysql可手动设置，如：
+   ```mysql
+    SET GLOBAL time_zone = '+8:00';
+    ```     
+   - jpa相关配置也可手动设置，如 serverTimezone=Asia/Shanghai
+  ```
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://cellcraft.store:5506/secruity_test?
+          serverTimezone=Asia/Shanghai&
+          useUnicode=true&
+          characterEncoding=utf-8&
+          useSSL=true
+  ```

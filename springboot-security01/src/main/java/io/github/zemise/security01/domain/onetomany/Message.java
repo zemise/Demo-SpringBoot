@@ -1,5 +1,6 @@
 package io.github.zemise.security01.domain.onetomany;
 
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,6 +18,26 @@ public class Message {
         this.info = info;
     }
 
+    public Message(String info, CustomerM customer) {
+        this.info = info;
+        this.customer = customer;
+    }
+
     public Message() {
+    }
+
+    // 多对一
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "customer_id")
+    private CustomerM customer;
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id=" + id +
+                ", info='" + info + '\'' +
+                ", customerId=" + customer.getId() +
+                ", customerName=" + customer.getName() +
+                '}';
     }
 }

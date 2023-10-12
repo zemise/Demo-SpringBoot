@@ -5,32 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-data/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-data/s02-springdata-jpa/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/CustomerM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/CustomerMRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/BiAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/BiCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/CustomerBiRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToManyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneBiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneUniTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/manytomany/ManyToManyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/ManyToOneTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/SysPermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysPermission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/repository/SysPermissionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/repository/SysRoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/repository/SysUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/repository/SysUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/resources/demo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/demo.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/SpringbootSecurity01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/SpringbootSecurity01ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +28,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,6 +96,7 @@
       <recent name="F:\001_AllCode\Java\SpringBoot\Demo-SpringBoot\springboot-web\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.zemise.security01.manytomany" />
       <recent name="io.github.zemise.security01.onetoone" />
       <recent name="io.github.zemise.tacoweb" />
     </key>
@@ -121,81 +108,81 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OneToManyTest.testDelete">
-    <configuration name="OneToManyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManyToManyTest.testUpdate">
+    <configuration name="ManyToManyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
+          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToManyTest" />
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManyToManyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-security01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneToManyTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManyToManyTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
+          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToManyTest" />
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
       <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneToManyTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManyToManyTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
+          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToManyTest" />
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
       <option name="METHOD_NAME" value="testFind" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneToOneBiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManyToManyTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
+          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToOneBiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OneToOneBiTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToOneBiTest" />
-      <option name="METHOD_NAME" value="testSave" />
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OneToManyTest.testDelete" />
-        <item itemvalue="JUnit.OneToManyTest.test" />
-        <item itemvalue="JUnit.OneToManyTest.testFind" />
-        <item itemvalue="JUnit.OneToOneBiTest.testSave" />
-        <item itemvalue="JUnit.OneToOneBiTest" />
+        <item itemvalue="JUnit.ManyToManyTest.testUpdate" />
+        <item itemvalue="JUnit.ManyToManyTest.test" />
+        <item itemvalue="JUnit.ManyToManyTest.testDelete" />
+        <item itemvalue="JUnit.ManyToManyTest.testFind" />
+        <item itemvalue="JUnit.ManyToManyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +265,7 @@
       <workItem from="1696637839738" duration="5940000" />
       <workItem from="1696772244946" duration="28744000" />
       <workItem from="1696902735118" duration="68049000" />
-      <workItem from="1697068152881" duration="14197000" />
+      <workItem from="1697068152881" duration="31970000" />
     </task>
     <servers />
   </component>
