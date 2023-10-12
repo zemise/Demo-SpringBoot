@@ -162,4 +162,118 @@ management.endpoint.health.show-details=always`
     - 启用server和client服务，访问server
 
 # SpringBoot项目部署
+略
 
+# Spring Data JPA
+**什么是JPA?与JDBC的区别**
+
+SUN官方提出的**一种ORM规范**，O：Object R：Relative M：Mapping
+JPA是规范，而Hibernate是JPA的实现
+Spring Data JPA旨在改进数据访问层的实现以提升开发效率
+
+- 相同处：
+1. 都跟数据库操作有关，JPA 是JDBC的升华，升级版。
+2. JDBC和JPA都是一组规范接口
+3. 都是由SUN官方推出的
+- 不同处：
+1. JDBC是由各个关系型数据库实现的，JPA是由**ORM**框架实现
+2. JDBC使用SQL语句和数据库通信，JPA用**面向对象**方式，通过ORM框架来生成SQL，进行操作。
+3. JPA在JDBC之上的，JPA也要依赖JDBC才能操作数据库。
+
+总的来说，类比下的话，用JPA相当与用了个翻译器，无需学习专门的外语语言
+
+mybatis：小巧、方便？、高效、简单、直接、半自动
+半自动的ORM框架
+小巧：mybatis就是jdbc封装
+
+hibernate：强大、方便、高效、复杂、绕弯子、全自动
+全自动的ORM框架
+强大：根据ORM映射生成不同SQL
+
+**JPA的对象4种状态**
+- 临时状态：又称为瞬时状态，刚创建出来，没有与entityManager发生关系，没有被持久化，不处于entityManager中的对象。
+- 持久状态：与entityManager发生关系，已经被持久化，可以把持久化状态当做实实在在的数据库记录。
+- 删除状态：执行remove方法，事物提交之前。
+- 游离状态：游离状态就是提交到数据库后，事务commit后实体的状态，因为事务已经提交了，此时实体的属性任你如何改变，也不会同步到数据库，因为游离是没人管的孩子，不在持久化
+上下文中
+
+**多表关联操作**
+
+- OneToOne
+```java
+@Entity
+@Table(name = "tb_customer")
+@Data
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @Column(name = "cust_address")
+    private String address;
+
+    // 单向关联一对一
+    /**
+     * cascade 设置关联操作
+     *  All, 所有持久化操作
+     *  PERSIST 只有插入才会执行关联操作
+     *  MERGE 只有修改才会执行关联操作
+     *  REMOVE 只有删除才会执行关联操作
+     *
+     * fetch 设置是否懒加载
+     *  EAGER 立即加载（默认）
+     *  LAZY 懒加载（直到用到对象才会进行查询，因为不是所有关联对象需要用到）
+     *
+     * orphanRemoval 关联移除（通常在修改的时候会用到）
+     * 一旦关联的数据设置null，或修改为其他的关联数据，如果想删除关数据，就可以设置为true
+     */
+    @OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY, orphanRemoval = true)
+    // 设置外键的字段的ID
+    @JoinColumn(name = "account_id")
+    private Account account;
+}
+```
+
+- OneToMore
+```java
+@Entity
+@Table(name = "m_customer")
+@Data
+public class CustomerM {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+    private String address;
+
+
+    // 一对多
+    // 一对多，默认把@OneToMany放在一的这一类，但其外键字段实际在生成在多的那张表
+    /**
+     * OneToMany fetch默认懒加载
+     */
+//    @OneToMany(cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.ALL)
+    // 设置外键的字段的ID
+    @JoinColumn(name = "customer_id")
+    private List<Message> messages;
+}
+```
+
+**设置了懒加载后需添加@Transactional？为什么懒加载需要配置事务？**
+- 当通过repository调用完查询方法后，session就会立即关闭，一旦session关闭就不能查询
+- 加了事务后，就能让session直到事务关闭才会关闭
+
+
+
+题外话：
+@Data 等于以下四个注解
+```java
+@Getter // 所有属性的get方法
+@Setter // 所有属性的set方法
+@RequiredArgsConstructor // 生成所欲必须属性(加final)的构造方法，如果没有final就是无参构造方法
+@EqualAndHashCode
+```

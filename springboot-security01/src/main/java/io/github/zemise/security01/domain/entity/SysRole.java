@@ -1,7 +1,8 @@
-package io.github.zemise.security01.domain;
+package io.github.zemise.security01.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
@@ -9,8 +10,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "sys_role")
-@Data
-@NoArgsConstructor
 public class SysRole implements Serializable {
     private static final long serialValueUID = 1L;
     @Id
@@ -23,6 +22,33 @@ public class SysRole implements Serializable {
     public SysRole(Long id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public SysRole() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<SysPermission> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<SysPermission> permissions) {
+        this.permissions = permissions;
     }
 
     @ManyToMany
