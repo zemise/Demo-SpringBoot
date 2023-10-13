@@ -5,18 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/manytomany/ManyToManyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/ManyToOneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/MyFilterSecurityInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/repository/SysPermissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/repository/SysRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/MyCustomUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/MyInvocationSecurityMetadataSourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/SysService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/SysRolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysRolePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysPermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysPermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/manytomany/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/manytomany/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/manytomany/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/manytomany/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/manytomany/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/manytomany/config/JpaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/CustomerM.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetomany/CustomerM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/CustomerMRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetomany/CustomerMRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetomany/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetomany/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetomany/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/BiAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_bidirectional/BiAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/BiCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_bidirectional/BiCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional/CustomerBiRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_bidirectional/CustomerBiRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_unidirectional/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_unidirectional/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_unidirectional/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/demo/onetoone_unidirectional/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/repository/SysUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/repository/SysUserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/SpringbootSecurity01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/SpringbootSecurity01ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/manytomany/ManyToManyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/manytomany/ManyToManyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/ManyToOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/ManyToOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToManyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToManyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneBiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneBiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneUniTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/test/java/io/github/zemise/security01/onetoone/OneToOneUniTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,34 +79,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/zemise/Desktop/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "41ef4ba9665eda7dfa581e51bef50cb9",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zemise/Desktop/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;41ef4ba9665eda7dfa581e51bef50cb9&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional" />
@@ -108,22 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManyToManyTest.testUpdate">
-    <configuration name="ManyToManyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SpringbootSecurity01ApplicationTests.testFind">
     <configuration name="ManyToManyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
@@ -140,38 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManyToManyTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManyToManyTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
-      <option name="METHOD_NAME" value="testFind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ManyToManyTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-security01" />
       <extension name="coverage">
@@ -183,6 +159,54 @@
       <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
       <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
       <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootSecurity01ApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-security01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.security01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.SpringbootSecurity01ApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootSecurity01ApplicationTests.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-security01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.security01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.SpringbootSecurity01ApplicationTests" />
+      <option name="METHOD_NAME" value="testFind" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootSecurity01ApplicationTests.testLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-security01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.security01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.zemise.security01" />
+      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.SpringbootSecurity01ApplicationTests" />
+      <option name="METHOD_NAME" value="testLoad" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -241,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringbootSecurity01ApplicationTests.testFind" />
+        <item itemvalue="JUnit.SpringbootSecurity01ApplicationTests.testLoad" />
+        <item itemvalue="JUnit.SpringbootSecurity01ApplicationTests.test" />
         <item itemvalue="JUnit.ManyToManyTest.testUpdate" />
         <item itemvalue="JUnit.ManyToManyTest.test" />
-        <item itemvalue="JUnit.ManyToManyTest.testDelete" />
-        <item itemvalue="JUnit.ManyToManyTest.testFind" />
-        <item itemvalue="JUnit.ManyToManyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +289,8 @@
       <workItem from="1696637839738" duration="5940000" />
       <workItem from="1696772244946" duration="28744000" />
       <workItem from="1696902735118" duration="68049000" />
-      <workItem from="1697068152881" duration="31970000" />
+      <workItem from="1697068152881" duration="36311000" />
+      <workItem from="1697156586647" duration="10937000" />
     </task>
     <servers />
   </component>

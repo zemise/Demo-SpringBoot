@@ -1,9 +1,9 @@
 package io.github.zemise.security01.onetoone;
 
 
-import io.github.zemise.security01.domain.onetoone_bidirectional.BiAccount;
-import io.github.zemise.security01.domain.onetoone_bidirectional.BiCustomer;
-import io.github.zemise.security01.domain.onetoone_bidirectional.CustomerBiRepository;
+import io.github.zemise.security01.demo.onetoone_bidirectional.BiAccount;
+import io.github.zemise.security01.demo.onetoone_bidirectional.BiCustomer;
+import io.github.zemise.security01.demo.onetoone_bidirectional.CustomerBiRepository;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

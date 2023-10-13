@@ -1,8 +1,8 @@
 package io.github.zemise.security01.onetoone;
 
-import io.github.zemise.security01.domain.onetomany.CustomerM;
-import io.github.zemise.security01.domain.onetomany.Message;
-import io.github.zemise.security01.domain.onetomany.MessageRepository;
+import io.github.zemise.security01.demo.onetomany.CustomerM;
+import io.github.zemise.security01.demo.onetomany.Message;
+import io.github.zemise.security01.demo.onetomany.MessageRepository;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

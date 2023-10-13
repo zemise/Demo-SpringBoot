@@ -1,9 +1,9 @@
 package io.github.zemise.security01.manytomany;
 
-import io.github.zemise.security01.domain.manytomany.Employee;
-import io.github.zemise.security01.domain.manytomany.EmployeeRepository;
-import io.github.zemise.security01.domain.manytomany.Role;
-import io.github.zemise.security01.domain.manytomany.RoleRepository;
+import io.github.zemise.security01.demo.manytomany.Employee;
+import io.github.zemise.security01.demo.manytomany.EmployeeRepository;
+import io.github.zemise.security01.demo.manytomany.Role;
+import io.github.zemise.security01.demo.manytomany.RoleRepository;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

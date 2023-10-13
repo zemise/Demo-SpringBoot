@@ -1,8 +1,8 @@
 package io.github.zemise.security01.onetoone;
 
-import io.github.zemise.security01.domain.onetoone_unidirectional.Account;
-import io.github.zemise.security01.domain.onetoone_unidirectional.Customer;
-import io.github.zemise.security01.domain.onetoone_unidirectional.CustomerRepository;
+import io.github.zemise.security01.demo.onetoone_unidirectional.Account;
+import io.github.zemise.security01.demo.onetoone_unidirectional.Customer;
+import io.github.zemise.security01.demo.onetoone_unidirectional.CustomerRepository;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

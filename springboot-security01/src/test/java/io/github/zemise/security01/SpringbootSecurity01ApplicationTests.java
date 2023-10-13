@@ -1,28 +1,54 @@
 package io.github.zemise.security01;
 
-import io.github.zemise.security01.domain.entity.SysUser;
-import io.github.zemise.security01.repository.SysUserRepository;
+import io.github.zemise.security01.jpa.domain.SysRole;
+import io.github.zemise.security01.jpa.repository.SysUserRepository;
+import io.github.zemise.security01.jpa.service.MyCustomUserService;
+import io.github.zemise.security01.jpa.service.SysService;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.util.Assert;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @SpringBootTest
 class SpringbootSecurity01ApplicationTests {
     @Resource
     private SysUserRepository userRepository;
 
+    @Resource
+    private SysService service;
 
+    @Resource
+    private MyCustomUserService myCustomUserService;
+
+    @Transactional(readOnly = true)
     @Test
-    void testFindByUsername(){
-//        SysUser user = userRepository.findByUsername("admin");
-//        Assert.notNull(user, "User 'admin' should exit");
-//        System.out.println(user.getPassword());
-
-        System.out.println(userRepository.findRolesByUsername("admin"));
-
-        System.out.println(userRepository.findAllRolePermissoin());
+    void test(){
+        System.out.println(userRepository.findByUsername("admin"));
     }
 
+    @Transactional(readOnly = true)
+    @Test
+    void testFind(){
+//        System.out.println(service.findRolesByUsername("admin"));
+        List<SysRole> roles = service.findRolesByUsername("admin");
+        for (SysRole role : roles) {
+            System.out.println(role.getPermissions());
+        }
 
+        System.out.println("==========");
+        System.out.println(service.findPermissionsByUsername("admin"));
+
+        System.out.println(service.findAllPermission());
+
+        System.out.println(service.findAllRolePermission());
+    }
+
+    @Test
+    @Transactional
+    void testLoad(){
+        myCustomUserService.loadUserByUsername("admin");
+    }
 }
