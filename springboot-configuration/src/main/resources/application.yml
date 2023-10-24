@@ -1,0 +1,16 @@
+#logging:
+#  file:
+#    name: ./logs/spring_log%d{yyyy-MM-dd-HH}.%i.log
+#  pattern:
+#    # %d{HH:mm:ss.SSS}：日志输出时间。
+#    # %thread：输出日志的进程名，这在Web应用以及异步任务处理中很有用。
+#    # %-5level：日志级别，使用5个字符靠左对齐。
+#    # %logger-：日志输出者的名称。%msg：日志消息。
+#    # %n：平台的换行符。
+#    console: "%d{yyyy-MM-dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n"
+#    file: "%d{yyyy-MM-dd-HH:mm} [%thread] %-5level %logger- %msg%n"
+#  level:
+#    # 指定整个项目的日志级别为WARN
+#    # root: warn
+#    # 也可对某个包指定单独的日志级别
+#    io.github.zemise.configuration: warn

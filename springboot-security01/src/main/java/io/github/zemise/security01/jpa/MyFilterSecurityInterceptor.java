@@ -19,23 +19,18 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
 
     private final FilterInvocationSecurityMetadataSource securityMetadataSource;
 
-    @Autowired
+//    @Autowired
     public MyFilterSecurityInterceptor(FilterInvocationSecurityMetadataSource securityMetadataSource) {
         this.securityMetadataSource = securityMetadataSource;
     }
 
-    //todo 原本如此，但有错误
-//    @Autowired
-//    public void setMyAccessDecisionManager(MyAccessDecisionManager myAccessDecisionManager){
-//        super.setAccessDecisionManager(myAccessDecisionManager);
-//    }
     @Autowired
-    public void setMyAccessDecisionManager(AccessDecisionManager accessDecisionManager){
-        super.setAccessDecisionManager(accessDecisionManager);
+    public void setMyAccessDecisionManager(MyAccessDecisionManager myAccessDecisionManager){
+        super.setAccessDecisionManager(myAccessDecisionManager);
     }
 
     @Override
-    public void init(FilterConfig filterConfig) {
+    public void init(FilterConfig filterConfig) throws ServletException{
     }
 
     @Override

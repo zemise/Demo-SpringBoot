@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+    <!-- 关闭logback的状态输出-->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+    <!-- etc -->
     <property name="LOG_CONTEXT_NAME" value="log"/>
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
     <property name="LOG_HOME" value="logs/${LOG_CONTEXT_NAME}"/>
@@ -18,6 +21,7 @@
       </filter>
     </appender>
     -->
+
     <!-- 彩色日志依赖的渲染类 -->
     <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
     <conversionRule conversionWord="wex"

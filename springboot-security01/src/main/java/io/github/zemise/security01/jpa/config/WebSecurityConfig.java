@@ -6,13 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @ComponentScan("io.github.zemise.security01")
 @Slf4j
-public class WebSecurityConfig{
+public class WebSecurityConfig {
     private MyCustomUserService myCustomUserService;
 
     // 通过实现UserDetailService来进行验证
@@ -21,11 +24,15 @@ public class WebSecurityConfig{
         this.myCustomUserService = myCustomUserService;
     }
 
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
     @Bean
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorizeHttpRequest -> authorizeHttpRequest
-                        .requestMatchers("/", "index", "/login", "/css/**", "/js/**").permitAll()
+                                .requestMatchers("/", "index", "/login", "/css/**", "/js/**").permitAll()
                                 .anyRequest().authenticated()
 //                        .requestMatchers("/resources/**").permitAll()
 //                        .requestMatchers("/admin/**").hasRole("ADMIN")
