@@ -22,7 +22,7 @@ public class WebSecurityConfig{
     }
 
 
-//    @Bean
+    @Bean
     public SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorizeHttpRequest -> authorizeHttpRequest
                         .requestMatchers("/", "index", "/login", "/css/**", "/js/**").permitAll()
