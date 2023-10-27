@@ -5,43 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/src/main/java/io/github/zemise/configuration/LogDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/src/main/java/io/github/zemise/configuration/SpringbootConfigurationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-configuration/src/test/java/io/github/zemise/configuration/SpringbootConfigurationApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/MyAccessDecisionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/java/io/github/zemise/security02/SpringbootSecurity02Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/java/io/github/zemise/security02/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/java/io/github/zemise/security02/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/resources/templates/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-security02/src/test/java/io/github/zemise/security02/SpringbootSecurity02ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/MyFilterSecurityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/MyFilterSecurityInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/MyInvocationSecurityMetadataSourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/MyInvocationSecurityMetadataSourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/SysService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/service/SysService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,34 +46,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zemise/Desktop/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-security01/src/main/resources/templates&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;41ef4ba9665eda7dfa581e51bef50cb9&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Volumes/passSSD/0000云盘整理文件/001_AllCode/Java/SpringBoot/Demo-SpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "c7d429c88991b1b458ef35700878a967",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springboot-security01/src/main/resources/templates" />
@@ -311,7 +276,10 @@
       <workItem from="1697156586647" duration="11867000" />
       <workItem from="1697631876817" duration="11457000" />
       <workItem from="1697784768753" duration="5740000" />
-      <workItem from="1698108442594" duration="6671000" />
+      <workItem from="1698108442594" duration="7593000" />
+      <workItem from="1698131709001" duration="599000" />
+      <workItem from="1698244008131" duration="7369000" />
+      <workItem from="1698337070305" duration="559000" />
     </task>
     <servers />
   </component>

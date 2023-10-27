@@ -32,6 +32,7 @@ public class SysUser implements Serializable {
     @JoinTable(name = "sys_user_role",
             joinColumns = {@JoinColumn(name = "sys_user_id")},
             inverseJoinColumns = {@JoinColumn(name = "sys_role_id")})
+
     private List<SysRole> roles;
 
     private @Version Long version;
