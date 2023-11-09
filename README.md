@@ -162,9 +162,11 @@ management.endpoint.health.show-details=always`
     - 启用server和client服务，访问server
 
 # SpringBoot项目部署
+
 略
 
 # Spring Data JPA
+
 **什么是JPA?与JDBC的区别**
 
 SUN官方提出的**一种ORM规范**，O：Object R：Relative M：Mapping
@@ -172,10 +174,13 @@ JPA是规范，而Hibernate是JPA的实现
 Spring Data JPA旨在改进数据访问层的实现以提升开发效率
 
 - 相同处：
+
 1. 都跟数据库操作有关，JPA 是JDBC的升华，升级版。
 2. JDBC和JPA都是一组规范接口
 3. 都是由SUN官方推出的
+
 - 不同处：
+
 1. JDBC是由各个关系型数据库实现的，JPA是由**ORM**框架实现
 2. JDBC使用SQL语句和数据库通信，JPA用**面向对象**方式，通过ORM框架来生成SQL，进行操作。
 3. JPA在JDBC之上的，JPA也要依赖JDBC才能操作数据库。
@@ -191,16 +196,19 @@ hibernate：强大、方便、高效、复杂、绕弯子、全自动
 强大：根据ORM映射生成不同SQL
 
 **JPA的对象4种状态**
+
 - 临时状态：又称为瞬时状态，刚创建出来，没有与entityManager发生关系，没有被持久化，不处于entityManager中的对象。
 - 持久状态：与entityManager发生关系，已经被持久化，可以把持久化状态当做实实在在的数据库记录。
 - 删除状态：执行remove方法，事物提交之前。
 - 游离状态：游离状态就是提交到数据库后，事务commit后实体的状态，因为事务已经提交了，此时实体的属性任你如何改变，也不会同步到数据库，因为游离是没人管的孩子，不在持久化
-上下文中
+  上下文中
 
 **多表关联操作**
 
 - OneToOne
+
 ```java
+
 @Entity
 @Table(name = "tb_customer")
 @Data
@@ -237,7 +245,9 @@ public class Customer {
 ```
 
 - OneToMany
+
 ```java
+
 @Entity
 @Table(name = "m_customer")
 @Data
@@ -264,8 +274,9 @@ public class CustomerM {
 ```
 
 - ManyToOne
-当插入"多""的数据的时候，使用多对一的关联关系更加合理
-只有几个注意点，如下
+  当插入"多""的数据的时候，使用多对一的关联关系更加合理
+  只有几个注意点，如下
+
 ```
 @Test
 @Transactional(readOnly = true)
@@ -287,6 +298,7 @@ void testFind(){
 - ManyToMany
 
 ```java
+
 @Entity
 @Table(name = "a_employee")
 @Data
@@ -306,13 +318,14 @@ public class Employee {
      */
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "a_employee_role_relation",
-    joinColumns = {@JoinColumn(name = "em_id")},
-    inverseJoinColumns = {@JoinColumn(name = "r_id")})
+            joinColumns = {@JoinColumn(name = "em_id")},
+            inverseJoinColumns = {@JoinColumn(name = "r_id")})
     private List<Role> roles;
 }
 ```
 
 ```java
+
 @SpringBootTest
 public class ManyToManyTest {
     @Resource
@@ -323,7 +336,8 @@ public class ManyToManyTest {
 
     @Test
     @Transactional
-    @Commit // 此处很重要，不加这条注释，可能不会入库
+    @Commit
+    // 此处很重要，不加这条注释，可能不会入库
     // 插入
     /**
      * 1. 如果保存的关联数据，希望使用已有的，就需要从数据库中查出来
@@ -398,22 +412,25 @@ public class ManyToManyTest {
 
 ```
 
-
-
 **设置了懒加载后需添加@Transactional？为什么懒加载需要配置事务？**
+
 - 当通过repository调用完查询方法后，session就会立即关闭，一旦session关闭就不能查询
 - 加了事务后，就能让session直到事务关闭才会关闭
 
 **乐观锁**
 hibernate
 主要作用：防止并发修改
+
 ```
 private @Version Long version;
 ```
+
 简单来说就是加一个@Version和属性
 
 **审计**
+
 ```java
+
 @Entity
 @Table(name = "a_employee")
 @Data
@@ -424,7 +441,7 @@ public class Employee {
     private Long id;
 
     private String name;
-    
+
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "a_employee_role_relation",
             joinColumns = {@JoinColumn(name = "em_id")},
@@ -459,14 +476,15 @@ public class Employee {
 ```
 
 ```java
+
 @Component
 @EnableJpaAuditing
 public class JpaConfig {
 
     // AuditorAware 返回当前用户
     @Bean
-    public AuditorAware<String> auditorAware(){
-       return new AuditorAware(){
+    public AuditorAware<String> auditorAware() {
+        return new AuditorAware() {
             @Override
             public Optional getCurrentAuditor() {
                 // 当前用户 session 或redis等等
@@ -478,21 +496,24 @@ public class JpaConfig {
 }
 ```
 
-
 题外话：
+
 1. @Data 等于以下四个注解
+
 ```
 @Getter // 所有属性的get方法
 @Setter // 所有属性的set方法
 @RequiredArgsConstructor // 生成所欲必须属性(加final)的构造方法，如果没有final就是无参构造方法
 @EqualAndHashCode
 ```
+
 2. 用springboot jpa往服务器mysql插入数据时，对应时间不匹配的解决办法
-   - 对应mysql可手动设置，如：
+    - 对应mysql可手动设置，如：
    ```mysql
     SET GLOBAL time_zone = '+8:00';
     ```     
-   - jpa相关配置也可手动设置，如 serverTimezone=Asia/Shanghai
+    - jpa相关配置也可手动设置，如 serverTimezone=Asia/Shanghai
+
   ```
 spring:
   datasource:
@@ -503,3 +524,187 @@ spring:
           characterEncoding=utf-8&
           useSSL=true
   ```
+
+### SpringBoot Log
+
+关于日志，默认使用的是logbook
+
+```xml
+<!--其实spring-boot-starter其中包含了 spring-boot-starter-logging-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-logging</artifactId>
+</dependency>
+```
+
+对于不太详细的配置，application.yml配置文件，可以应付以下
+
+```yaml
+# 日志配置
+logging:
+  #  file:
+    # max-history: 30
+    # max-size: 10MB
+    # path: /var/log
+  #    name: ./logs/spring_log.log
+  pattern:
+    # %d{HH:mm:ss.SSS}：日志输出时间。
+    # %thread：输出日志的进程名，这在Web应用以及异步任务处理中很有用。
+    # %-5level：日志级别，使用5个字符靠左对齐。
+    # %logger-：日志输出者的名称。%msg：日志消息。
+    # %n：平台的换行符。
+    console: "%d{yyyy-MM-dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n"
+    file: "%d{yyyy-MM-dd-HH:mm} [%thread] %-5level %logger- %msg%n"
+  level:
+    # 指定整个项目的日志级别为WARN
+    # root: warn
+    # 也可对某个包指定单独的日志级别
+    io.github.zemise.configuration: warn
+```
+
+更细致化的配置可以在resources文件夹下配置logback-spring.xml文件
+
+1. 可选，application.yml文件指定，因为是默认，此步骤可以省略，如果不用logbook可以指定更改
+
+```yaml
+   logging:
+   config: classpath:logback-spring.xml
+```
+
+2. 配置logback-spring.xml，以下达到的效果是，以相对路径产生一个日志文件夹根据日期分类，分别记录了error、info、warn级别的日志
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 关闭logback的状态输出-->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+    <property name="LOG_CONTEXT_NAME" value="log"/>
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
+    <property name="LOG_HOME" value="logs/${LOG_CONTEXT_NAME}"/>
+    <!-- 定义日志上下文的名称 -->
+    <contextName>${LOG_CONTEXT_NAME}</contextName>
+    <!-- 控制台输出 -->
+    <!--<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+      <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+        &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;
+        <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{50}:%L) - %msg%n</pattern>
+        <charset>utf-8</charset>
+      </encoder>
+      <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <level>INFO</level>
+      </filter>
+    </appender>-->
+
+
+    <!-- 彩色日志依赖的渲染类 -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex"
+                    converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx"
+                    converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
+    <!-- 彩色日志格式 -->
+    <property name="CONSOLE_LOG_PATTERN"
+              value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+
+    <!--1. 输出到控制台-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!--此日志appender是为开发使用，只配置最底级别，控制台输出的日志级别是大于或等于此级别的日志信息-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>
+            <!-- 设置字符集 -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--info日志统一输出到这里-->
+    <appender name="file.info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Prudent>true</Prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名，按小时生成-->
+            <FileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}/info/info.%d{yyyy-MM-dd-HH}.%i.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 除按日志记录之外，还配置了日志文件不能超过10M(默认)，若超过10M，日志文件会以索引0开始， -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %method 方法名  %L 行数 %msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56}.%method:%L - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <!-- 此日志文件只记录info级别的 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <!--错误日志统一输出到这里-->
+    <appender name="file.error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Prudent>true</Prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名，按天生成-->
+            <FileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}/error/error.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 除按日志记录之外，还配置了日志文件不能超过10M(默认)，若超过10M，日志文件会以索引0开始， -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %method 方法名  %L 行数 %msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56}.%method:%L - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <!-- 此日志文件只记录error级别的 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--warn日志统一输出到这里-->
+    <appender name="file.warn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Prudent>true</Prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}/warn/warn.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- 除按日志记录之外，还配置了日志文件不能超过10M(默认)，若超过10M，日志文件会以索引0开始， -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %method 方法名  %L 行数 %msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56}.%method:%L - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <!-- 此日志文件只记录warn级别的 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <!--  日志输出级别 -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="file.error"/>
+        <appender-ref ref="file.info"/>
+        <appender-ref ref="file.warn"/>
+    </root>
+
+</configuration>
+```

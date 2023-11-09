@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/springboot-security/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-security01/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-data/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-security02/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-configuration/pom.xml" />
       </list>
     </option>
   </component>
