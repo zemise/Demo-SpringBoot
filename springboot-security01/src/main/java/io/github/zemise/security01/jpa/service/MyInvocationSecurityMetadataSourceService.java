@@ -9,6 +9,7 @@ import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
@@ -54,6 +55,7 @@ public class MyInvocationSecurityMetadataSourceService implements FilterInvocati
      * @throws IllegalArgumentException
      */
     @Override
+    @Transactional
     public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
         if (null == map) {
             loadResourceDefine();

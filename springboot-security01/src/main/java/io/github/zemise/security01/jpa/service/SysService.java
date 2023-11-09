@@ -8,6 +8,7 @@ import io.github.zemise.security01.jpa.repository.SysRoleRepository;
 import io.github.zemise.security01.jpa.repository.SysUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -24,16 +25,19 @@ public class SysService {
         this.roleRepository = roleRepository;
     }
 
+    @Transactional
     public SysUser findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 
+    @Transactional
     public List<SysRole> findRolesByUsername(String username) {
         SysUser user = userRepository.findByUsername(username);
 
         return user.getRoles();
     }
 
+    @Transactional
     public List<SysPermission> findPermissionsByUsername(String username) {
         SysUser user = userRepository.findByUsername(username);
         List<SysRole> roles = user.getRoles();
@@ -66,6 +70,7 @@ public class SysService {
      * 获得资源和角色对应的表，也就是角色权限中间表
      * @return List<SysRolePermission>
      */
+    @Transactional
     public List<SysRolePermission> findAllRolePermission() {
         List<SysRolePermission> rolePermissionList = new ArrayList<>();
         roleRepository.findAll().forEach(role -> {
