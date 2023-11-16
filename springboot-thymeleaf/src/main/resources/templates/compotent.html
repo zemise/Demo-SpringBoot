@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="com1">
+    <!--/*@thymesVar id="user" type="io.github.zemise.thymeleaf.domain.UserVo"*/-->
+    <h2 th:text="${user.getUsername()}"></h2>
+    this is  from com1
+</div>
+
+
+<div th:fragment="com2">
+    this is from com2
+</div>
+
+<div th:fragment="com3(message)">
+    <p th:text="${message}"></p>
+    this is from com3
+</div>
+
+<div th:fragment="com4(message)">
+    <div th:replace="${message}"></div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="|zemise的${title}|">默认的组件标题</title>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f68ffc-0f99-4e4c-b430-03e2497730be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/io/github/zemise/thymeleaf/SpringbootThymeleafApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/io/github/zemise/thymeleaf/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/java/io/github/zemise/thymeleaf/domain/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/static/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/compotent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-thymeleaf/src/test/java/io/github/zemise/thymeleaf/SpringbootThymeleafApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/jpa/domain/SysUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +37,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="52df22a3-6c51-40b6-8eda-49f93e4abfc0" />
+        <option name="url" value="git@github.com:zemise/Demo-SpringBoot" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/6.1.4/spring-security-config-6.1.4-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java" root0="FORCE_HIGHLIGHTING" />
@@ -46,41 +76,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Volumes/passSSD/0000云盘整理文件/001_AllCode/Java/SpringBoot/Demo-SpringBoot",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "c7d429c88991b1b458ef35700878a967",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/MySSD/001_AllCode/Java/SpringBoot/Demo-SpringBoot/springboot-thymeleaf/src/main/resources/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;928824eb4dfd3f946df5f458c69658ea&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot-thymeleaf/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/springboot-security01/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/springboot-security01/src/main/resources" />
       <recent name="$PROJECT_DIR$/springboot-security01/src/main/java/io/github/zemise/security01/domain/onetoone_bidirectional" />
       <recent name="$PROJECT_DIR$/springboot-docker/src/main/docker" />
-      <recent name="$PROJECT_DIR$/springboot-docker/src/main/resources/static/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/springboot-web/src/main/java/io/github/zemise/tacoweb/controllers" />
@@ -99,160 +129,24 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootConfigurationApplication">
-    <configuration name="ManyToManyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManyToManyTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.manytomany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.manytomany" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.manytomany.ManyToManyTest" />
-      <option name="METHOD_NAME" value="testFind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OneToManyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.onetoone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01.onetoone" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.onetoone.OneToManyTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootSecurity01ApplicationTests.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.SpringbootSecurity01ApplicationTests" />
-      <option name="METHOD_NAME" value="testFind" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootSecurity01ApplicationTests.testLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.github.zemise.security01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.github.zemise.security01" />
-      <option name="MAIN_CLASS_NAME" value="io.github.zemise.security01.SpringbootSecurity01ApplicationTests" />
-      <option name="METHOD_NAME" value="testLoad" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootConfigurationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-configuration" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.configuration.SpringbootConfigurationApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootDeployApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-deploy" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.springbootdeploy.SpringbootDeployApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootDockerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-docker" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.docker.SpringbootDockerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootScheduledApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-scheduled" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.scheduled.SpringbootScheduledApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootSecurity01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-security01" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.security01.SpringbootSecurity01Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootSecurity02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="SpringbootThymeleafApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="springboot-security02" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.security02.SpringbootSecurity02Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="springboot-security" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.security.SpringbootSecurityApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="springboot-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.tacoweb.SpringbootWebApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentManagementSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="student-management-system" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.sms.StudentManagementSystemApplication" />
+      <module name="springboot-thymeleaf" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.zemise.thymeleaf.SpringbootThymeleafApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.zemise.thymeleaf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManyToManyTest.test" />
-        <item itemvalue="JUnit.OneToManyTest.test" />
-        <item itemvalue="JUnit.ManyToManyTest.testFind" />
-        <item itemvalue="JUnit.SpringbootSecurity01ApplicationTests.testFind" />
-        <item itemvalue="JUnit.SpringbootSecurity01ApplicationTests.testLoad" />
+        <item itemvalue="Spring Boot.SpringbootThymeleafApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -280,13 +174,36 @@
       <workItem from="1698131709001" duration="599000" />
       <workItem from="1698244008131" duration="7369000" />
       <workItem from="1698337070305" duration="559000" />
+      <workItem from="1699500597776" duration="28000" />
+      <workItem from="1699520325525" duration="898000" />
+      <workItem from="1699538176987" duration="632000" />
+      <workItem from="1699542467593" duration="882000" />
+      <workItem from="1699544859803" duration="23000" />
+      <workItem from="1699664674751" duration="3093000" />
+      <workItem from="1699672765260" duration="2021000" />
+      <workItem from="1700133317179" duration="1839000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

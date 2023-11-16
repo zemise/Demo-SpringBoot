@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- @{/...}大括号里用/开头表示根目录    -->
+    <link rel="stylesheet" th:href="@{app.css}">
+    <style>
+        .active{
+            color: red;
+        }
+    </style>
+
+    <div class="app">
+    </div>
+
+    <h2 th:text="${user.getUsername()}">默认的字符</h2>
+    <h2 th:text="${user.username}">默认的字符</h2>
+    <p th:text="${user.age}">默认的年龄</p>
+
+
+    <!-- 将User定义为临时变量的方式，就可以直接以*{xxx}获取到具体的值 -->
+    <div th:object="${user}">
+        <h2 th:text="*{username}">默认的名字</h2>
+        <p th:text="*{age}">默认的年龄</p>
+    </div>
+    <!--th:if    -->
+    <p th:if="${user.isVip}">会员</p>
+    <p th:text="${#dates.format(user.createdTime, 'yyyy-MM-dd')}"></p>
+    <!-- th: each    -->
+    <ul>
+        <li th:each="tag:${user.getTags()}" th:text="${tag}"></li>
+    </ul>
+
+    <ul>
+        <!-- 以下stat是自定义的名字，任意取名都行，都为索引       -->
+        <li th:each="tag, stat:${user.getTags()}"
+            th:text="${tag}"
+            th:classappend="${stat.last}? active"
+        ></li>
+    </ul>
+
+    <div th:switch="${user.sex}">
+        <p th:case="1">男</p>
+        <p th:case="2">女</p>
+        <p th:case="*">默认</p>
+    </div>
+
+
+
+    <!-- replace com1-->
+    <div th:replace="~{compotent::com1}"></div>
+    <!-- insert com1-->
+    <div th:insert="~{compotent::com1}"></div>
+    <!-- id com-->
+    <div th:insert="~{compotent::com3('传递的数据')}"></div>
+    <div th:insert="~{compotent::com4(~{::#message})}"></div>
+        <p id="message">替换的模块</p>
+    <div>
+        <script th:inline="javascript">
+            const user=/*[[${user}]]*/{};
+            console.log(user)
+        </script>
+    </div>
+</head>
+<body>
+
+</body>
+</html>
